@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+    <aside>
+        <h1>Splitter</h1>
+    </aside>
+    <main class="wrapper space-mono">
+        <div class="leftWrapper">
+            <div class="inputGroup">
+                <label for="bill">Bill</label><br>
+                <input type="text" name="bill" id="bill">
+            </div>
+            <div class="tipGroup">
+                <h2>Select Tip %</h2>
+                <div class="buttonGroups">
+                    <button class="tipButton">5%</button>
+                    <button class="tipButton">10%</button>
+                    <button class="tipButton">15%</button>
+                    <button class="tipButton">25%</button>
+                    <button class="tipButton">50%</button>
+                    <button class="tipButton">Custom</button>
+                </div>
+            </div>
+            <div class="inputGroup">
+                <label for="numOfPeople">Number of People</label><br>
+                <input type="text" name="numOfPeople" id="numOfPeople">
+            </div>
+        </div>
+        <div class="rightWrapper">
+            <div class="textWrap">
+                <p class="white">Tip Amount</p>
+                <p id="tipAmount">$</p>
+            </div>
+            <span>/ person</span>
+            <div class="textWrap">
+                <p class="white">Total</p>
+                <p id="totalAmount">$</p>
+            </div>
+            <span>/ person</span>
+
+            <button id="reset" class="space-mono">Reset</button>
+        </div>
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+    </footer>
+</body>
+<script type="text/javascript" src="script.js"> </script>
+</html>
