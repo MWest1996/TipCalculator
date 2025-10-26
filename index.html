@@ -11,44 +11,43 @@
     <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-    <aside>
+    <div class="header">
         <h1>Splitter</h1>
-    </aside>
+    </div>
     <main class="wrapper space-mono">
         <div class="leftWrapper">
             <div class="inputGroup">
-                <label for="bill">Bill</label><br>
+                <label for="bill">Bill</label>
                 <input type="text" name="bill" id="bill">
             </div>
             <div class="tipGroup">
-                <h2>Select Tip %</h2>
+                <p>Select Tip %</p>
                 <div class="buttonGroups">
-                    <button class="tipButton">5%</button>
-                    <button class="tipButton">10%</button>
-                    <button class="tipButton">15%</button>
-                    <button class="tipButton">25%</button>
-                    <button class="tipButton">50%</button>
-                    <button class="tipButton">Custom</button>
+                    <button class="tipButton space-mono">5%</button>
+                    <button class="tipButton space-mono">10%</button>
+                    <button class="tipButton space-mono">15%</button>
+                    <button class="tipButton space-mono">25%</button>
+                    <button class="tipButton space-mono">50%</button>
+                    <input type="text" class="tipButton space-mono" placeholder="Custom">
+                    <!-- <button class="tipButton space-mono">Custom</button> -->
                 </div>
             </div>
             <div class="inputGroup">
-                <label for="numOfPeople">Number of People</label><br>
+                <label for="numOfPeople">Number of People</label>
                 <input type="text" name="numOfPeople" id="numOfPeople">
             </div>
         </div>
         <div class="rightWrapper">
             <div class="textWrap">
-                <p class="white">Tip Amount</p>
-                <p id="tipAmount">$</p>
+                <p class="totalLabels">Tip Amount<br><span>/person</span></p>
+                <p id="tipAmount">$0.00</p>
             </div>
-            <span>/ person</span>
             <div class="textWrap">
-                <p class="white">Total</p>
-                <p id="totalAmount">$</p>
+                <p class="totalLabels">Total<br><span>/person</span></p>
+                <p id="totalAmount">$0.00</p>
             </div>
-            <span>/ person</span>
 
-            <button id="reset" class="space-mono">Reset</button>
+            <button id="reset" class="space-mono">RESET</button>
         </div>
     </main>
     <footer class="attribution">
