@@ -12,43 +12,48 @@
 </head>
 <body>
     <div class="header">
-        <h1>Splitter</h1>
+        <h1>Spli<br>tter</h1>
     </div>
     <main class="wrapper space-mono">
-        <div class="leftWrapper">
-            <div class="inputGroup">
-                <label for="bill">Bill</label>
-                <input type="text" name="bill" id="bill">
-            </div>
-            <div class="tipGroup">
-                <p>Select Tip %</p>
-                <div class="buttonGroups">
-                    <button class="tipButton space-mono">5%</button>
-                    <button class="tipButton space-mono">10%</button>
-                    <button class="tipButton space-mono">15%</button>
-                    <button class="tipButton space-mono">25%</button>
-                    <button class="tipButton space-mono">50%</button>
-                    <input type="text" class="tipButton space-mono" placeholder="Custom">
-                    <!-- <button class="tipButton space-mono">Custom</button> -->
+        <form id="form">
+            <div class="leftWrapper">
+                <div class="inputGroup">
+                    <label for="bill">Bill</label>
+                    <input type="text" name="bill" id="bill">
+                </div>
+                <div class="tipGroup">
+                    <p>Select Tip %</p>
+                    <div class="buttonGroups">
+                        <button id="5Per" class="tipButton space-mono">5%</button>
+                        <button id="10Per" class="tipButton space-mono">10%</button>
+                        <button id="15Per" class="tipButton space-mono">15%</button>
+                        <button id="25Per" class="tipButton space-mono">25%</button>
+                        <button id="50Per" class="tipButton space-mono">50%</button>
+                        <input id="custom" type="text" class="tipButton space-mono" placeholder="Custom">
+                        <!-- <button class="tipButton space-mono">Custom</button> -->
+                    </div>
+                </div>
+                <div class="inputGroup">
+                    <div class="errorWrap">
+                        <label for="numOfPeople">Number of People</label>
+                        <span class="error"></span>
+                    </div>
+                    <input type="text" name="numOfPeople" id="numOfPeople">
                 </div>
             </div>
-            <div class="inputGroup">
-                <label for="numOfPeople">Number of People</label>
-                <input type="text" name="numOfPeople" id="numOfPeople">
-            </div>
-        </div>
-        <div class="rightWrapper">
-            <div class="textWrap">
-                <p class="totalLabels">Tip Amount<br><span>/person</span></p>
-                <p id="tipAmount">$0.00</p>
-            </div>
-            <div class="textWrap">
-                <p class="totalLabels">Total<br><span>/person</span></p>
-                <p id="totalAmount">$0.00</p>
-            </div>
+            <div class="rightWrapper">
+                <div class="textWrap">
+                    <p class="totalLabels">Tip Amount<br><span>/person</span></p>
+                    <p id="tipAmount">$0.00</p>
+                </div>
+                <div class="textWrap">
+                    <p class="totalLabels">Total<br><span>/person</span></p>
+                    <p id="totalAmount">$0.00</p>
+                </div>
 
-            <button id="reset" class="space-mono">RESET</button>
-        </div>
+                <button id="reset" class="space-mono">RESET</button>
+            </div>
+        </form>
     </main>
     <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
