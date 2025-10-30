@@ -10,4 +10,4 @@ const numOfPeople = document.getElementById('numOfPeople');
 const tipAmount = document.getElementById('tipAmount');
 const totalAmount = document.getElementById('totalAmount');
 const reset = document.getElementById('reset');
-const errMsg = document.getElementsByClassName('error')
+const errMsg = document.getElementsByClassName('error');

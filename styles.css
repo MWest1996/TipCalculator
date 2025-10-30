@@ -21,7 +21,6 @@
     color:var(--color-grey-400)
 }
 
-
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -126,6 +125,11 @@ button:hover{
     font-size: .75rem;
 }
 
+.selectedButton{
+    background-color: var(--color-green-400);
+    color: black;
+}
+
 /* .errorWrap{
     display: flex;
     flex-direction: row;
@@ -151,10 +155,10 @@ label{
     margin-left: 1.75rem;
 }
 
-.billIcon{
+.icon{
     position: absolute;
-    bottom: 9px;
-    left: 15px;
+    top: 60%;
+    left: 30px;
     margin: 0;
     padding: 0;
 }
@@ -189,9 +193,6 @@ label{
     color: var(--color-green-900);
     background-color: var(--color-green-400);
     margin-top: 1rem;
-    /* margin-block: 1rem;
-    margin-left: auto;
-    margin-right: auto; */
     height: 3rem;
     border-radius: .5rem;
     border: none;
@@ -204,7 +205,7 @@ label{
     border: 1px solid red;
 }
 
-@media (min-width: 31.25rem){
+@media (min-width: 43.75rem){
     form{
         display: flex;
         flex-direction: row;
@@ -220,21 +221,28 @@ label{
         margin-bottom: 1.5rem;
     }
 
+    .inputGroup{
+        margin-top: 1.5rem;
+    }
+
     #reset{
         margin-top: 8rem;
     }
 
     #bill, #numOfPeople{
-        width: 100%;
-    }
-
-    #numOfPeople{
-        margin-bottom: 1.5rem;
+        width: 95%;
     }
 
     .buttonGroups{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-gap: 1rem;
-}
+    }
+
+    .leftWrapper{
+        margin-block: 1rem;
+    }
+
+    label{
+        margin-left: 1.25rem;
+    }
 }
